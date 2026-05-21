@@ -1,0 +1,9 @@
+UserName,UserPrincipalName,Department,JobTitle,GroupName,AccessType,Reviewer,ReviewDecision,RemediationAction,RiskLevel,Notes
+Alice Johnson,alice.johnson@ntjhunghotmail.onmicrosoft.com,HR,HR Manager,SG-HR-Employees,Department Access,HR Manager,Approve,None,Medium,Access matches HR role
+Grace Kim,grace.kim@ntjhunghotmail.onmicrosoft.com,HR,Recruiting Specialist,SG-HR-Employees,Department Access,HR Manager,Approve,None,Medium,Access matches HR role
+Brian Lee,brian.lee@ntjhunghotmail.onmicrosoft.com,Finance,Finance Analyst,SG-Finance-Employees,Department Access,Finance Manager,Approve,None,High,Finance access is sensitive but appropriate
+Henry Brown,henry.brown@ntjhunghotmail.onmicrosoft.com,Finance,Accounts Payable Specialist,SG-Finance-Employees,Department Access,Finance Manager,Approve,None,High,Access matches finance role
+Carlos Ramirez,carlos.ramirez@ntjhunghotmail.onmicrosoft.com,IT,Helpdesk Technician,SG-IT-Admins,Privileged Access,IT Manager,Review Further,Validate admin need,High,Privileged access should be reviewed carefully
+Dana Smith,dana.smith@ntjhunghotmail.onmicrosoft.com,Contractors,Project Contractor,SG-Contractors,Contractor Access,Project Owner,Remove,Remove from group,High,Contractor access should be time-limited
+James Clark,james.clark@ntjhunghotmail.onmicrosoft.com,Contractors,Temporary IT Contractor,SG-Contractors,Contractor Access,Project Owner,Approve,None,High,Temporary access still needed for active project
+Emma Wilson,emma.wilson@ntjhunghotmail.onmicrosoft.com,Sales,Sales Representative,SG-Sales-Employees,Department Access,Sales Manager,Approve,None,Low,Access matches sales role
