@@ -1,48 +1,77 @@
-# Identity Governance Access Review Simulation
+# Identity Governance Access Review Lab
 
 ## Project Overview
 
-This project demonstrates a manual Identity Governance access review process. The lab simulates how an IAM team can review user access, collect reviewer decisions, track remediation, and prepare audit evidence.
+This project demonstrates an Identity Governance access review process using Microsoft Entra ID. The lab includes both a manual access review simulation and a live Microsoft Entra access review after Microsoft Entra ID P2 trial access was enabled.
 
-This project does not require Microsoft Entra ID P1 or P2 licensing. Instead of using the built-in Microsoft Entra access review feature, this lab uses a manual access review process based on group membership review, reviewer instructions, decision tracking, remediation documentation, and audit evidence.
+The project simulates how an IAM team can review user access, collect reviewer decisions, track remediation, and prepare audit evidence.
 
 ## Business Problem
 
 Organizations need to regularly confirm that users still require access to sensitive systems, groups, and applications. Without regular access reviews, users may keep access they no longer need, which increases security, compliance, and audit risk.
 
+Contractor access is especially important to review because contractor accounts may be temporary, project-based, or time-limited.
+
 ## Tools Used
 
 - Microsoft Entra ID
+- Microsoft Entra ID P2 Trial
+- Microsoft Entra Access Reviews
 - Security groups
 - Group membership review
 - Manual access review process
+- Reviewer decisions
+- Remediation tracking
 - Markdown documentation
 - GitHub
 - Screenshots as audit evidence
 
 ## What This Project Demonstrates
 
+- Microsoft Entra access review creation
 - Identity governance concepts
-- Manual access review process
+- Access review planning
+- Contractor access review
+- Reviewer decision tracking
+- Approve and deny review decisions
+- Remediation planning
 - Least privilege review
 - Group membership review
-- Reviewer decision tracking
-- Access remediation planning
 - Audit evidence documentation
 - IAM documentation
 
 ## Groups Reviewed
 
-The simulated access review focuses on the following groups:
+The project focuses on reviewing access for:
 
+- SG-Contractors
 - SG-HR-Employees
 - SG-Finance-Employees
 - SG-IT-Admins
-- SG-Contractors
 
-## Review Scope
+## Live Access Review Created
 
-The review evaluates whether users still need access based on:
+### AR001 - Contractor Group Access Review
+
+This access review was created to review membership in the contractor access group.
+
+Review purpose:
+
+- Confirm whether contractor users still require access
+- Identify contractor access that should be removed
+- Document reviewer decisions
+- Support least privilege and audit readiness
+
+Example review decisions:
+
+| User | Decision | Reason |
+|---|---|---|
+| Dana Smith | Deny / Remove | Contractor access no longer required for project |
+| James Clark | Approve | Temporary project access still required |
+
+## Manual Review Scope
+
+The manual access review simulation evaluates whether users still need access based on:
 
 - Department
 - Job role
@@ -68,9 +97,33 @@ The review evaluates whether users still need access based on:
 
 ## Lab Screenshots
 
-### HR Group Access Review
+### Access Review Created
 
-![HR Access Review Members](screenshots/hr-access-review-members.png)
+![Access Review Created](screenshots/access-review-created.png)
+
+### Access Review Settings
+
+![Access Review Settings](screenshots/access-review-settings.png)
+
+### Access Review Reviewers
+
+![Access Review Reviewers](screenshots/access-review-reviewers.png)
+
+### Access Review Decisions
+
+![Access Review Decisions](screenshots/access-review-decisions.png)
+
+### Access Review Completed
+
+![Access Review Completed](screenshots/access-review-completed.png)
+
+### Access Review Results
+
+![Access Review Results](screenshots/access-review-results.png)
+
+### Apply Results Screen
+
+![Access Review Apply Results](screenshots/access-review-apply-results.png)
 
 ### Finance Group Access Review
 
@@ -90,13 +143,17 @@ The review evaluates whether users still need access based on:
 
 Access reviews help organizations confirm that users still need access to systems, groups, and applications.
 
+### Identity Governance
+
+Identity Governance helps manage access over time through reviews, approvals, remediation, and audit evidence.
+
 ### Least Privilege
 
 Least privilege means users should only have the access required for their job responsibilities.
 
-### Risk-Based Review
+### Contractor Access Review
 
-Higher-risk groups, such as IT admin, finance, and contractor groups, should be reviewed more carefully and more frequently.
+Contractor access should be reviewed regularly because it is often temporary or project-based.
 
 ### Remediation
 
@@ -110,21 +167,20 @@ Audit evidence includes screenshots, exports, review decisions, and remediation 
 
 | Decision | Count |
 |---|---|
-| Approve | 6 |
-| Remove | 1 |
-| Review Further | 1 |
+| Approve | 1 |
+| Deny / Remove | 1 |
 
 ## Items Requiring Follow-Up
 
 | User | Group | Required Action |
 |---|---|---|
-| Carlos Ramirez | SG-IT-Admins | Validate continued need for privileged access |
 | Dana Smith | SG-Contractors | Remove contractor access |
+| James Clark | SG-Contractors | Keep temporary access |
 
 ## Resume Bullet
 
-- Built a manual identity governance access review simulation for Microsoft Entra ID groups, including reviewer instructions, access review planning, remediation tracking, least privilege analysis, and audit evidence documentation.
+- Built a Microsoft Entra Identity Governance access review lab with live access review creation, contractor group review, reviewer decisions, remediation tracking, least privilege analysis, and audit evidence documentation.
 
 ## Status
 
-Completed manual identity governance access review simulation with sample review data, reviewer instructions, remediation tracking, risk matrix, audit evidence packet, and group membership screenshots.
+Completed Microsoft Entra Identity Governance access review lab with live access review screenshots, manual review documentation, remediation tracking, risk matrix, audit evidence packet, and group membership evidence.
